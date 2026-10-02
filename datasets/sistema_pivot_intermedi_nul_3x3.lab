@@ -1,0 +1,15 @@
+LAB1 1
+name "Pivot nul a la segona etapa (3 x 3)"
+task 3
+outcomes 1 0
+limits 1e-12 1e-09 0.05 40
+A 3 3
+2 1 0
+4 2 1
+0 3 1
+B 0 0
+input 3
+-0.25 1.5 -1.75
+expected 3
+0.5 -1.25 2
+end

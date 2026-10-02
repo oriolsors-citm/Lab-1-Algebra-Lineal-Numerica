@@ -1,0 +1,18 @@
+LAB1 1
+name "Producte rectangular amb fraccions (2 x 4) per (4 x 3)"
+task 2
+outcomes 0 0
+limits 1e-12 1e-09 0.05 40
+A 2 4
+0.5 -1.25 0 2
+-2 0.25 3.5 1
+B 4 3
+1 0.5 -1
+0.25 -2 1
+-1 0 0.75
+2 -0.5 0
+input 0
+
+expected 6
+4.1875 1.75 -1.75 -3.4375 -2 4.875
+end

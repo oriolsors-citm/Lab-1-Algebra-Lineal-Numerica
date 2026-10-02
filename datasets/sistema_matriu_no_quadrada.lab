@@ -1,0 +1,14 @@
+LAB1 1
+name "Sistema amb matriu no quadrada"
+task 3
+outcomes 2 2
+limits 1e-12 1e-09 0.05 40
+A 2 3
+1 2 3
+4 5 6
+B 0 0
+input 2
+1 2
+expected 0
+
+end

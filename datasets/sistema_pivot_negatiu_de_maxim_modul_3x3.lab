@@ -1,0 +1,15 @@
+LAB1 1
+name "Pivot negatiu amb el valor absolut més gran (3 x 3)"
+task 3
+outcomes 0 0
+limits 1e-12 1e-09 0.05 40
+A 3 3
+1 -2 3
+-9 1 2
+3 4 1
+B 0 0
+input 3
+9 -1.75 -1.5
+expected 3
+0.5 -1.25 2
+end

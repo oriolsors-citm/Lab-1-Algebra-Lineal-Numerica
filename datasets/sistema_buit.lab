@@ -1,0 +1,12 @@
+LAB1 1
+name "Sistema buit"
+task 3
+outcomes 2 2
+limits 1e-12 1e-09 0.05 40
+A 0 0
+B 0 0
+input 0
+
+expected 0
+
+end

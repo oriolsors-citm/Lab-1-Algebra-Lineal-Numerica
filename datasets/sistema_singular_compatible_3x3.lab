@@ -1,0 +1,15 @@
+LAB1 1
+name "Sistema singular amb infinites solucions (3 x 3)"
+task 3
+outcomes 1 1
+limits 1e-12 1e-09 0.05 40
+A 3 3
+1 2 3
+2 4 6
+1 -1 0
+B 0 0
+input 3
+4 8 1.75
+expected 3
+0.5 -1.25 2
+end
