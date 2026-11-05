@@ -8,7 +8,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_library(exercises exercises/Matrix.cpp exercises/Solver.cpp
-    support/Numerics.cpp support/Dataset.cpp support/Validation.cpp)
+    exercises/Matrix.hpp exercises/Solver.hpp
+    support/Numerics.cpp support/Dataset.cpp support/Validation.cpp
+    support/Numerics.hpp support/Dataset.hpp support/Validation.hpp)
+source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}" FILES
+    exercises/Matrix.cpp exercises/Solver.cpp exercises/Matrix.hpp exercises/Solver.hpp
+    support/Numerics.cpp support/Dataset.cpp support/Validation.cpp
+    support/Numerics.hpp support/Dataset.hpp support/Validation.hpp)
 target_include_directories(exercises PUBLIC exercises support)
 if(MSVC)
     target_compile_options(exercises PUBLIC /utf-8)
@@ -40,6 +46,7 @@ add_library(imgui STATIC ${imgui_SOURCE_DIR}/imgui.cpp ${imgui_SOURCE_DIR}/imgui
 target_include_directories(imgui PUBLIC ${imgui_SOURCE_DIR} ${imgui_SOURCE_DIR}/backends)
 target_link_libraries(imgui PUBLIC SDL3::SDL3 OpenGL::GL)
 add_executable(lab1 app/main_app.cpp)
+set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT lab1)
 target_link_libraries(lab1 PRIVATE exercises imgui)
 set_target_properties(lab1 PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 foreach(config Debug Release RelWithDebInfo MinSizeRel)
